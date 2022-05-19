@@ -1,13 +1,13 @@
 $("#toUpperCase").on("click", ()=> {
     $("#result").text($("#input").val().toUpperCase());
-}
-    )
+})
+
 $("#backwards").on("click", ()=> {
-    //$("#input").val().reverse();
     $("#result").text($("#input").val().split("").reverse().join(""));
 })
+
 $("#words").on("click", ()=> {
-    $("#result").text($("input").val().split(" "));   
+    $("#result").text($("input").val().split(" "));
 })
 
 $("#length").on("click", ()=> {
@@ -16,3 +16,4 @@ $("#length").on("click", ()=> {
 
 $("#withoutSpace").on("click", ()=> {
     $("#result").text($("input").val().split(" ").join("").length);
+})
